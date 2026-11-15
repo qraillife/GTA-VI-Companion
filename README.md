@@ -43,3 +43,7 @@ Open the GitHub Pages URL in a supported browser and select **Install app** or *
 - GTA VI: https://www.rockstargames.com/VI
 - Regional release timings: https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s
 - Newswire: https://www.rockstargames.com/newswire
+
+## Media inside the app
+
+The media tab has a playable trailer viewer and screenshot gallery; neither requires navigating to an outside page. Trailer streams, image files and official Rockstar logo are loaded from online sources, so an internet connection is required to display those assets. The countdown and locally cached app shell work offline. The screenshots and video footage are owned by Rockstar Games / Take-Two.
