@@ -1,0 +1,1 @@
+Optional LOCAL official trailers: trailer-1.mp4, trailer-2.mp4, extended-look.mp4. Add only files you are authorised to host. The app embeds the original videos otherwise, and age verification may still apply.
