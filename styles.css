@@ -4,3 +4,55 @@
 /* Official promotional assets and embedded media */
 .official-logo{object-fit:contain;display:block}.logo-nav{width:48px;height:48px;border-radius:5px;background:#fff}.hero-official-logo{position:absolute;inset:auto;width:min(95%,440px);height:360px;filter:drop-shadow(0 16px 36px #15081b99);background:none;border-radius:0}.video-grid{grid-template-columns:repeat(3,1fr)}.video-card{display:block;text-align:left;color:inherit;cursor:pointer;padding:0;font:inherit;width:100%}.video-card:hover,.shot:hover{border-color:#ffb1ca;transform:translateY(-2px)}.video-card,.shot{transition:transform .2s,border-color .2s}.media-visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.media-visual:after{content:'';position:absolute;inset:0;background:#12091a30}.media-visual .play{z-index:2}.gallery-heading{margin-top:50px}.screenshot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.shot{padding:0;border:1px solid #ffffff2b;border-radius:10px;overflow:hidden;background:#27162f;aspect-ratio:16/10;cursor:pointer}.shot img{display:block;width:100%;height:100%;object-fit:cover}.viewer{width:min(1000px,96vw);max-height:94dvh;padding:0;border:1px solid #ffffff44;border-radius:12px;background:#15101f;color:#fff;box-shadow:0 28px 100px #000b}.viewer::backdrop{background:#06030ae8}.viewer-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 18px}.viewer-top button{color:white;background:#ffffff16;border:1px solid #ffffff33;border-radius:8px;padding:9px 12px}.viewer-body img{display:block;width:100%;max-height:76dvh;object-fit:contain}.viewer-body iframe{width:100%;height:auto;aspect-ratio:16/9;display:block;border:0}.viewer-body{min-height:100px}.viewer:focus{outline:none}
 @media(max-width:700px){.video-grid{grid-template-columns:1fr}.video-card{display:grid;grid-template-columns:44% 1fr}.video-card .media-visual{aspect-ratio:16/10}.screenshot-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.hero-official-logo{width:320px;max-height:290px}.logo-nav{width:42px;height:42px}}
+
+/* Mobile layout repair — keep everything inside the device viewport. */
+html,body{width:100%;max-width:100%;overflow-x:clip}
+img,video,iframe{max-width:100%}
+main,section,header,footer{max-width:100%}
+.topbar{min-width:0}
+.topbar .brand{min-width:0;max-width:calc(100% - 56px);overflow:hidden}
+.topbar .brand span{min-width:0;white-space:normal}
+.topbar .logo-nav{width:42px;height:42px;flex:0 0 42px;object-fit:contain}
+.hero-inner,.hero-inner > div,.count-panel,.section,.facts{min-width:0}
+.hero-art{overflow:hidden}
+.hero-official-logo{object-fit:contain;max-width:100%}
+@media(max-width:850px){
+.topbar{padding:0 16px;height:64px}
+.topbar nav{top:64px;max-height:calc(100dvh - 64px);overflow:auto;box-shadow:0 14px 30px #0009}
+.topbar nav:not(.open){display:none!important}
+.topbar nav.open{display:flex}
+.hero{width:100%;overflow:hidden}
+.hero-inner{display:block;min-height:0;padding:76px 20px 75px;overflow:hidden}
+.hero-inner>div:first-child{position:relative;z-index:2;max-width:100%}
+.hero h1{font-size:clamp(47px,12vw,78px);line-height:.9;overflow-wrap:normal;letter-spacing:-1px}
+.hero-art{position:absolute;inset:auto -35px 0 auto;width:min(67vw,320px);height:230px;opacity:.19;pointer-events:none}
+.hero-official-logo{width:100%;height:100%;object-fit:contain}
+.sun{width:190px;height:190px}
+.count-panel{margin-top:-16px;width:calc(100% - 24px);padding:22px 16px}
+.facts,.section{width:calc(100% - 32px)}
+.panel-top{align-items:flex-start;gap:8px}
+.panel-top h2{font-size:clamp(23px,6vw,31px)}
+.status-pill{flex:none;white-space:nowrap}
+.clock{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.clock>div{min-width:0;padding:13px 2px}
+.clock strong{font-size:clamp(32px,9vw,55px)}
+.clock span{letter-spacing:.3px;font-size:8px}
+.feature-card{min-width:0}
+}
+@media(max-width:430px){
+.brand{font-size:15px;letter-spacing:.4px;gap:8px}
+.brand small{font-size:8px;letter-spacing:.6px}
+.hero-inner{padding:69px 17px 66px}
+.hero h1{font-size:clamp(44px,12.5vw,58px)}
+.lead{margin:19px 0;font-size:13px;line-height:1.6}
+.hero-actions .btn{padding:11px 12px;font-size:11px;gap:5px}
+.count-panel{padding:20px 13px}
+.facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 8px}
+.facts article{min-width:0;padding-left:10px}
+.facts article strong{font-size:18px;overflow-wrap:anywhere}
+.select-row{flex-direction:column}
+.select-row select{max-width:100%;font-size:14px}
+.clock strong{font-size:clamp(30px,9.1vw,40px)}
+.news-list a{min-width:0}
+.screenshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
